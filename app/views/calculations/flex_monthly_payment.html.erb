@@ -1,0 +1,8 @@
+<h1>Flexible Payment</h1>
+
+
+<h2>A
+  <%= @user_provided_term %> year loan of <%= @user_provided_pv%>,
+  with an annual interest rate of <%= @user_provided_basis_points/100.round(2) %>%,
+  requires a monthly payment of <%= number_to_currency(@monthlypayment) %>.
+</h2>
